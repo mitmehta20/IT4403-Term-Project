@@ -1,0 +1,151 @@
+.crypto-full-container {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.crypto-list {
+    overflow: auto;
+    height: 98%;
+    width: 100%;
+}
+
+.crypto-metadata {
+    flex-direction: row;
+    display: grid;
+    align-items: center;
+    width: 45%;
+    color: rgb(183, 183, 183);
+    margin-left: 30px;
+    margin-bottom: 10px;
+    margin-top: 15px;
+    border-bottom: 1px solid rgba(183, 183, 183, 0.391);
+    grid-template-columns: 25% 30%;
+}
+
+.crypto-metadata:hover {
+    flex-direction: row;
+    display: grid;
+    align-items: center;
+    width: 45%;
+    color: #092c47;
+    background-image: linear-gradient(to right, white, #092c47);
+    border-bottom: 1px solid #092c47;
+    grid-template-columns: 25% 30%;
+}
+
+.crypto-name {
+    margin-right: 25px;
+    display: flex;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 5px;
+}
+
+.crypto-symbol {
+    margin-right: 25px;
+    display: flex;
+    align-items: center;
+    vertical-align: middle;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.crypto-ind-view {
+    position: fixed;
+    left: 50%;
+    top: 10vh;
+    height: 100%;
+    width: 47%;
+    color: white
+}
+
+.crypto-ind-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.crypto-view-row {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    height: 100%
+}
+
+.crypto-view-row-offset {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    height: 100%
+}
+
+.crypto-view-row-center {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    height: 100%
+}
+
+.crypto-view-info-panel {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid white;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    margin: 10px 10px 10px 10px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.crypto-view-info-table, td {
+    border: 1px solid white;
+}
+
+.crypto-view-info-table-data {
+    margin-bottom: 15px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.crypto-view-info-table-row {
+    margin-bottom: 15px;
+    text-align: left;
+    padding-top: 15px;
+}
+
+.crypto-view-find-markets {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.crypto-view-find-markets button {
+    width: 100%;
+    height: 50px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.crypto-filter-bar {
+    color:white;
+    margin-left: 30px;
+}

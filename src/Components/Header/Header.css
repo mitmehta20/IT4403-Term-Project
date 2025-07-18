@@ -1,0 +1,21 @@
+.full-header-container {
+    background-color: #8a8a8a;
+    vertical-align: middle;
+    position: absolute;
+    height: 10vh;
+    width: 100%;
+    top: 0%;
+    left: 0%;
+}
+
+.header-navigation {
+    grid-template-columns: 25% 25% 25% 25%;
+    display: grid;
+}
+
+.header-items {
+    grid-template-columns: 30% auto;
+    display: grid;
+    align-self: center;
+    margin-top: 5vh;
+}
