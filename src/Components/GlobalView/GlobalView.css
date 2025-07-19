@@ -1,8 +1,41 @@
 .global-view-container {
-    height: 65%;
-    width: 65%;
+    height: 100%;
+    width: 100%;
     grid-template-rows: 33% 34% 33%;
     display: grid;
+}
+
+.global-view-full-container {
+    height: 65%;
+    width: 65%;
+}
+
+.global-view-full-container button{
+    background-color: #d6e4e9;
+    border: 1px solid #092c47;
+    font-size: 1em;
+    border-radius: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    color: #092c47;
+    font-weight: bolder;
+    margin-left: 10px;
+}
+
+.global-view-full-container button:hover{
+    background-color: #e08b00;
+    border: 1px solid #092c47;
+    font-size: 1em;
+    border-radius: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    color: #092c47;
+    font-weight: bolder;
+    margin-left: 10px;
 }
 
 .info-panel {

@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import './GlobalView.css'
+import refreshIcon from '../../assets/refresh-icon.png'
 
 const GlobalView = () => {
 
@@ -42,6 +43,8 @@ const GlobalView = () => {
   return (
     <>
     { data &&
+    <div className='global-view-full-container'>
+    <button onClick={refreshData}><img src={refreshIcon}/></button>
     <div className='global-view-container'>
 
         <div className='global-view-row'>
@@ -127,7 +130,7 @@ const GlobalView = () => {
             </div>
 
         </div>
-    </div>
+    </div> </div>
 }
     </>
   )
