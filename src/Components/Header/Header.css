@@ -1,5 +1,5 @@
 .full-header-container {
-    background-color: #8a8a8a;
+    background-color: #3a7ca5;
     vertical-align: middle;
     position: absolute;
     height: 10vh;
@@ -9,13 +9,51 @@
 }
 
 .header-navigation {
-    grid-template-columns: 25% 25% 25% 25%;
-    display: grid;
+    display: flex;
 }
 
 .header-items {
-    grid-template-columns: 30% auto;
-    display: grid;
+    display: flex;
+    flex-direction: column;
     align-self: center;
-    margin-top: 5vh;
+    align-items: center;
+}
+
+.header-title {
+    margin-top: 5px;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #092c47;
+    font-weight: bolder;
+    font-family: 'Trebuchet MS', sans-serif;
+}
+
+.nav-item button {
+    background-color: #d6e4e9;
+    border: 1px solid #092c47;
+    border-radius: 10px;
+    margin-right: 50px;
+    margin-left: 50px;
+    font-size: 1em;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 1vh;
+    padding-top: 1vh;
+    color: #092c47;
+    font-weight: bolder;
+}
+
+.nav-item button:hover {
+    background-color: #e08b00;
+    border: 1px solid #092c47;
+    border-radius: 10px;
+    margin-right: 50px;
+    margin-left: 50px;
+    font-size: 1em;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 1vh;
+    padding-top: 1vh;
+    color: #092c47;
+    font-weight: bolder;
 }

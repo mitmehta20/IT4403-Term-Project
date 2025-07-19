@@ -42,10 +42,10 @@ const MarketsView = ( { coinId, parentCallback } ) => {
 
   return (
     <div className='market-full-container'>
-      <button onClick={parentCallback}>Back to Crypto Search</button>
+      <button onClick={parentCallback} className='market-back-button'>Back to Crypto Search</button>
       <table className='market-table'>
         <thead>
-          <tr className='market-table-row'>
+          <tr className='market-table-row-header'>
             <th>Market Name</th>
             <th>Coin Symbol</th>
             <th>Quote</th>

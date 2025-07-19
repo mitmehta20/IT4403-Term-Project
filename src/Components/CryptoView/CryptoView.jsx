@@ -88,17 +88,19 @@ const CryptoView = ( {parentCallback } ) => {
   return (
     <div className='crypto-full-container'>
 
+        
+        <div className={selectedCoin ? 'crypto-list' : 'crypto-list crypto-list-center'}>
         <div className='crypto-filter-bar'>
-            <label>Filter</label>
+            <div className='crpyto-full-list-title'>List of Cryptocurrencies</div>
+            <label>Filter:</label>
             <input onChange={onFilterChange}></input>
         </div>
-        <div className='crypto-list'>
         {filtered && populateCoins()}
         </div>
 
         {selectedCoin &&
             <div className='crypto-ind-view'>
-                <button onClick={onCloseCrypto}>Close</button>
+                <button onClick={onCloseCrypto} className='crypto-close-button'>Close</button>
                 <div className='crypto-ind-info'>
                     <div className='crypto-ind-title'>
                         {`${selectedCoin.name} - ${selectedCoin.symbol}`}
@@ -142,47 +144,39 @@ const CryptoView = ( {parentCallback } ) => {
                     </div>
 
                     <div className='crypto-view-row-center'>
-                        <div className='crypto-view-info-panel'>
-                            <div className='crypto-view-info-table'>
-                                <table>
+                                <table className='crypto-view-info-table'>
                                     <tbody className='crypto-view-info-table-body'>
                                     <tr className='crypto-view-info-table-row'>
-                                        <td className='crypto-view-info-table-data'>Circulating Supply</td>
+                                        <td className='crypto-view-info-table-data-title'>Circulating Supply</td>
                                         <td className='crypto-view-info-table-data'>{formatNumber(selectedCoin.csupply)}</td>
                                     </tr>
                                     <tr className='crypto-view-info-table-row'>
-                                        <td className='crypto-view-info-table-data'>Total Supply</td>
+                                        <td className='crypto-view-info-table-data-title'>Total Supply</td>
                                         <td className='crypto-view-info-table-data'>{formatNumber(selectedCoin.tsupply)}</td>
                                     </tr>
                                     <tr className='crypto-view-info-table-row'>
-                                        <td className='crypto-view-info-table-data'>Max Supply</td>
+                                        <td className='crypto-view-info-table-data-title'>Max Supply</td>
                                         <td className='crypto-view-info-table-data'>{formatNumber(selectedCoin.msupply)}</td>
                                     </tr>
                                     </tbody>
                                 </table>
 
-                            </div>
-                        </div>
-                        <div className='crypto-view-info-panel'>
-                            <div className='crypto-view-info-table'>
-                            <table>
+                            <table className='crypto-view-info-table'>
                                 <tbody className='crypto-view-info-table-body'>
                                     <tr className='crypto-view-info-table-row'>
-                                        <td className='crypto-view-info-table-data'>Change in 24hrs</td>
+                                        <td className='crypto-view-info-table-data-title'>Change in 24hrs</td>
                                         <td className='crypto-view-info-table-data'>{`${selectedCoin.percent_change_24h}%`}</td>
                                     </tr>
                                     <tr className='crypto-view-info-table-row'>
-                                        <td className='crypto-view-info-table-data'>Change in 1hr</td>
+                                        <td className='crypto-view-info-table-data-title'>Change in 1hr</td>
                                         <td className='crypto-view-info-table-data'>{`${selectedCoin.percent_change_1h}%`}</td>
                                     </tr>
                                     <tr className='crypto-view-info-table-row'>
-                                        <td className='crypto-view-info-table-data'>Change in 7 Days</td>
+                                        <td className='crypto-view-info-table-data-title'>Change in 7 Days</td>
                                         <td className='crypto-view-info-table-data'>{`${selectedCoin.percent_change_7d}%`}</td>
                                     </tr>
                                     </tbody>
                                 </table>
-                            </div>
-                        </div>
                     </div>
                     <div className='crypto-view-find-markets'>
                         <button onClick={(e) => parentCallback(selectedCoin.id)}>Find Top Markets For This Coin</button>

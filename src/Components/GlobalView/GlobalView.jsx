@@ -17,7 +17,6 @@ const GlobalView = () => {
     const refreshData = async () => {
         const response = await fetch('https://api.coinlore.net/api/global/');
         const data = await response.json();
-        console.log(data);
         setData(data);
     }
 
@@ -88,7 +87,7 @@ const GlobalView = () => {
                     Total Market Cap
                 </div>
                 <div className='info-panel-content'>
-                {data && formatNumber(data[0].total_mcap)}</div>
+                {data && formatCurrency(data[0].total_mcap)}</div>
             </div>
 
             <div className='info-panel'>
@@ -124,7 +123,7 @@ const GlobalView = () => {
                     All Time High Market Cap
                 </div>
                 <div className='info-panel-content'>
-                {data && formatNumber(data[0].mcap_ath)}</div>
+                {data && formatCurrency(data[0].mcap_ath)}</div>
             </div>
 
         </div>
